@@ -7,4 +7,3 @@ document.queryselector('input[name="playName"]').value;
     alert("Player registration submitted successfully!");
 
 });
-
