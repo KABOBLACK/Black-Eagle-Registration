@@ -33,3 +33,16 @@ const photoFile = photoInput.files[0];
         <p><strong>Phone:</strong> ${phone}</p>
     `;
 });
+
+document.getElementById("searchButton").addEventListener("click", function() {
+
+    const searchId = document.getElementById("searchPlayer").value;
+
+    if (searchId === playerId) {
+        document.getElementById("playerProfile").style.display = "block";
+    } else {
+        document.getElementById("playerProfile").innerHTML =
+            "<p>Player not found.</p>";
+    }
+
+});
