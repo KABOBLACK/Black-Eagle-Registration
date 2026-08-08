@@ -17,16 +17,16 @@ document.querySelector("form").addEventListener("submit", function(event) {
     const preferredFoot = document.querySelector('select[name="preferredFoot"]').value;
     const phone = document.querySelector('input[name="phone"]').value;
 
-    alert(
-document.getElementById("playerProfile").innerHTML = `
-    <h2>Black Eagle FC Player Profile</h2>
+    document.getElementById("playerProfile").innerHTML = `
+        <h2>Black Eagle FC Player Profile</h2>
 
-    <p><strong>Player ID:</strong> ${playerId}</p>
-    <p><strong>Name:</strong> ${playerName}</p>
-    <p><strong>Age:</strong> ${age}</p>
-    <p><strong>Date of Birth:</strong> ${dateOfBirth}</p>
-    <p><strong>Location:</strong> ${location}</p>
-    <p><strong>Position:</strong> ${position}</p>
-    <p><strong>Preferred Foot:</strong> ${preferredFoot}</p>
-    <p><strong>Phone:</strong> ${phone}</p>
-`;
+        <p><strong>Player ID:</strong> ${playerId}</p>
+        <p><strong>Name:</strong> ${playerName}</p>
+        <p><strong>Age:</strong> ${age}</p>
+        <p><strong>Date of Birth:</strong> ${dateOfBirth}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Position:</strong> ${position}</p>
+        <p><strong>Preferred Foot:</strong> ${preferredFoot}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+    `;
+});
