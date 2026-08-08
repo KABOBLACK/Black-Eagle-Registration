@@ -22,6 +22,17 @@ document.querySelector("form").addEventListener("submit", function(event) {
     const preferredFoot = document.querySelector('select[name="preferredFoot"]').value;
     const phone = document.querySelector('input[name="phone"]').value;
 
+players.push({
+    playerId: playerId,
+    playerName: playerName,
+    age: age,
+    dateOfBirth: dateOfBirth,
+    location: location,
+    position: position,
+    preferredFoot: preferredFoot,
+    phone: phone
+});
+
 const photoInput = document.querySelector('input[name="playerPhoto"]');
 const photoFile = photoInput.files[0];
 
