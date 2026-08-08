@@ -17,6 +17,9 @@ document.querySelector("form").addEventListener("submit", function(event) {
     const preferredFoot = document.querySelector('select[name="preferredFoot"]').value;
     const phone = document.querySelector('input[name="phone"]').value;
 
+const photoInput = document.querySelector('input[name="playerPhoto"]');
+const photoFile = photoInput.files[0];
+
     document.getElementById("playerProfile").innerHTML = `
         <h2>Black Eagle FC Player Profile</h2>
 
