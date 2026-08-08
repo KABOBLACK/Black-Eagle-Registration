@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const players = [];
+    const players = JSON.parse(localStorage.getItem("players")) || [];
 
 const playerNumber = Math.floor(Math.random() * 9000) + 1000;
 const playerId = "BEFC-" + playerNumber;
