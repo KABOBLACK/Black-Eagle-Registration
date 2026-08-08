@@ -18,14 +18,15 @@ document.querySelector("form").addEventListener("submit", function(event) {
     const phone = document.querySelector('input[name="phone"]').value;
 
     alert(
-        "Player Registered!\n\n" +
-        "Player ID: " + playerId + "\n" +
-        "Name: " + playerName + "\n" +
-        "Age: " + age + "\n" +
-        "Date of Birth: " + dateOfBirth + "\n" +
-        "Location: " + location + "\n" +
-        "Position: " + position + "\n" +
-        "Preferred Foot: " + preferredFoot + "\n" +
-        "Phone: " + phone
-    );
-});
+document.getElementById("playerProfile").innerHTML = `
+    <h2>Black Eagle FC Player Profile</h2>
+
+    <p><strong>Player ID:</strong> ${playerId}</p>
+    <p><strong>Name:</strong> ${playerName}</p>
+    <p><strong>Age:</strong> ${age}</p>
+    <p><strong>Date of Birth:</strong> ${dateOfBirth}</p>
+    <p><strong>Location:</strong> ${location}</p>
+    <p><strong>Position:</strong> ${position}</p>
+    <p><strong>Preferred Foot:</strong> ${preferredFoot}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+`;
