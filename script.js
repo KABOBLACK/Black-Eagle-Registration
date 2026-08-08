@@ -1,6 +1,11 @@
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
+    const players = [];
+
+const playerNumber = Math.floor(Math.random() * 9000) + 1000;
+const playerId = "BEFC-" + playerNumber;
+
     const playerNumber = Math.floor(Math.random() * 9000) + 1000;
 const playerId = "BEFC-" + playerNumber;
 
