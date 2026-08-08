@@ -43,3 +43,22 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+#playerProfile {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#playerProfile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#playerProfile p {
+    text-align: left;
+    margin: 10px 0;
+}
