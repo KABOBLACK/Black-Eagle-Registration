@@ -62,3 +62,35 @@ document.getElementById("searchButton").addEventListener("click", function() {
     }
 
 });
+
+function displayPlayers() {
+    const playerList = document.getElementById("playerList");
+
+    playerList.innerHTML = "<h2>Registered Players</h2>";
+
+    players.forEach(function(player) {
+        const playerCard = document.createElement("div");
+
+        playerCard.innerHTML = `
+            <p><strong>Player ID:</strong> ${player.playerId}</p>
+            <p><strong>Name:</strong> ${player.playerName}</p>
+            <p><strong>Position:</strong> ${player.position}</p>
+            <hr>
+        `;
+
+        playerList.appendChild(playerCard);
+    });
+}
+
+players.push({
+    playerId: playerId,
+    playerName: playerName,
+    age: age,
+    dateOfBirth: dateOfBirth,
+    location: location,
+    position: position,
+    preferredFoot: preferredFoot,
+    phone: phone
+});
+
+displayPlayers();
