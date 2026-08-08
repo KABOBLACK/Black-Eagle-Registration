@@ -13,6 +13,8 @@
 
     <h2>Player Registration</h2>
     
+    ${photoFile ? `<img src="${URL.createObjectURL(photoFile)}" alt="Player Photo" width="150">` : ""}
+    
     <p>Player ID: <span id="playerId">Generating...</span></p>
 
     <form>
