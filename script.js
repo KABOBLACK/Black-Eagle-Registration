@@ -5,8 +5,6 @@ form.addEventListener("submit", function(event) {
 
     const playerName = document.getElementById("playerName").value;
 
-const playerName = document.getElementById("playerName").value;
-
 const dateOfBirth = document.getElementById("dateOfBirth").value;
 
 const location = document.getElementById("location").value;
