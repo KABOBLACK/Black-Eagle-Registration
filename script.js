@@ -6,3 +6,5 @@ form.addEventListener("submit", function(event) {
     const playerName = document.getElementById("playerName").value;
 
 alert("Player name: " + playerName);
+
+});
