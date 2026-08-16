@@ -1,92 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Black Eagle Registration</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BEFC Player Registration</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <h1>Black Eagle Football Club</h1>
 
-    <p>Founded and developed by Kabo Sabure</p>
+    <p>Official Player Registration</p>
 
-    <h2>Player Registration</h2>
-    
-    ${photoFile ? `<img src="${URL.createObjectURL(photoFile)}" alt="Player Photo" width="150">` : ""}
-    
-    <p>Player ID: <span id="playerId">Generating...</span></p>
+    <h2>Player Registration Form</h2>
 
-    <form>
+    <form id="registrationForm">
 
-        <label>Player Name:</label>
-        <input type="text" name="playerName">
+    <input type="text">
 
-        <br><br>
+    <input type="file" accept="image/*">
 
-        <label>Date of Birth:</label>
-        <input type="date" name="dateofBirth">
-
-        <br><br>
-
-        <label>Location:</label>
-        <input type="text" name="location"             placeholder="Enter town or city">
+        <label for="playerName">Player Name:</label>
+        <input
+            type="text"
+            id="playerName"
+            name="playerName"
+            required
+        >
 
         <br><br>
 
-        <label>Position:</label>
-        <select name="position">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input
+            type="date"
+            id="dateOfBirth"
+            name="dateOfBirth"
+            required
+        >
+
+        <br><br>
+
+        <label for="location">Location:</label>
+        <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Enter town or city"
+            required
+        >
+
+        <br><br>
+
+        <label for="position">Position:</label>
+        <select id="position" name="position" required>
+
             <option value="">Select position</option>
+
             <option value="Goalkeeper">Goalkeeper</option>
             <option value="Defender">Defender</option>
             <option value="Midfielder">Midfielder</option>
-            <option value="Forwarder">Forwarder</option>
+            <option value="Forward">Forward</option>
+
         </select>
 
         <br><br>
 
-        <label>Preferred Foot:</label>
-        <select name="preferredFoot">
+        <label for="preferredFoot">Preferred Foot:</label>
+        <select id="preferredFoot" name="preferredFoot" required>
+
             <option value="">Select foot</option>
+
             <option value="Right">Right</option>
             <option value="Left">Left</option>
             <option value="Both">Both</option>
+
         </select>
 
         <br><br>
 
+        <label for="playerPhoto">Player Photo:</label>
+        <input
+            type="file"
+            id="playerPhoto"
+            name="playerPhoto"
+            accept="image/*"
+        >
+
         <br><br>
 
-       <label>Player Photo:</label>
-       <input type="file" name="playerPhoto" accept="image/*">
-
-        <br><br>
-
-        <button type="submit">Register Player</button>
+        <button type="submit">
+            Register Player
+        </button>
 
     </form>
 
-<div id="playerSearch">
-    <h2>Search Player</h2>
-
-    <input
-        type="text"
-        id="searchPlayer"
-        placeholder="Enter Player ID"
-    >
-
-    <button type="button" id="searchButton">
-        Search
-    </button>
-</div>
-
-<div id="playerList">
-    <h2>Registered Players</h2>
-</div>
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
