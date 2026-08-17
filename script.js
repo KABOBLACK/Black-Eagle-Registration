@@ -1,4 +1,7 @@
-const form = document.getElementById("registrationForm");
+const players = [];
+
+const form = 
+document.getElementById("registrationForm");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
