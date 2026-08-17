@@ -22,6 +22,8 @@ document.getElementById("position").value;
          preferredFoot: preferredFoot
     };
 
+    players.push(player);
+
     alert("Player name: " + playerName);
 
 });
