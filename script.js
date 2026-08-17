@@ -13,6 +13,14 @@ const position = document.getElementById("position").value;
 
 const preferredFoot = document.getElementById("preferredFoot").value;
 
+const player = {
+    playerName: playerName,
+    dateOfBirth: dateOfBirth,
+    location: location,
+    position: position,
+    preferredFoot: preferredFoot
+};
+
 alert("Player name: " + playerName);
 
 });
